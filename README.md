@@ -45,3 +45,11 @@ If you have **Sprite.json** data file instead of the **Sprite.plist** one run th
     python unpacker.py Sprite json
     
 Result will be the same.
+
+# 补充
+若执行报错: ImportError: No module named PIL, 则需安装PIL模块:
+1. 执行命令(安装pip): sudo easy_install pip
+2. 如果出现错误:  'X11/Xlib.h' file not found, 则执行: xcode-select --install, 然后再执行上一步
+3. 再安装Pillow模块即可：sudo pip install pillow
+
+
